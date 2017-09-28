@@ -21,14 +21,14 @@
     "url" : "https://github.com/mennooo/orclapex-treeview-refresh.git"
   },
   "oracle" : {
-    "versions" : ["11.2.0.1", "12.1.0.1"],
+    "versions" : ["11.2", "12.1", "12.2"],
     "apex" : {
-      "versions" : ["5.0.0"],
+      "versions" : ["5.0", "5.1"],
       "plugin" : {
         "internalName" : "MHO.REFRESH_TREE",
         "type" : "dynamic action",
         "demo" : "https://apex.oracle.com/pls/apex/f?p=115922:2",
-        "previewImage" : "https://raw.githubusercontent.com/Dani3lSun/apex-plugin-guidedtour/master/preview.png"
+        "previewImage" : "https://raw.githubusercontent.com/mennooo/orclapex-treeview-refresh/master/preview.png"
       }
     }
   }
