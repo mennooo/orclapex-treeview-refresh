@@ -21,9 +21,9 @@
     "url" : "https://github.com/mennooo/orclapex-treeview-refresh.git"
   },
   "oracle" : {
-    "versions" : ["11.2", "12.1", "12.2"],
+    "versions" : ["11.2.0.1", "12.1.0.1"],
     "apex" : {
-      "versions" : ["5.0", "5.1"],
+      "versions" : ["5.0.0", "5.1.0"],
       "plugin" : {
         "internalName" : "MHO.REFRESH_TREE",
         "type" : "dynamic action",
