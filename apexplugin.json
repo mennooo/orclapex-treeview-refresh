@@ -21,7 +21,7 @@
     "url" : "https://github.com/mennooo/orclapex-treeview-refresh.git"
   },
   "oracle" : {
-    "versions" : ["12.1.0.2", "11.2.0.4"],
+    "versions" : ["11.2.0.1", "12.1.0.1"],
     "apex" : {
       "versions" : ["5.0.0", "5.1.0"],
       "plugin" : {
