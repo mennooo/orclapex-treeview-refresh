@@ -1,0 +1,35 @@
+{
+  "name" : "Tree - Refresh",
+  "version" : "1.0",
+  "description" : "Refresh the APEX 5.0 Tree asynchronous",
+  "keywords" : ["tree", "refresh"],
+  "homepage" : "https://github.com/mennooo/orclapex-treeview-refresh",
+  "bugs" : {
+    "url" : "https://github.com/mennooo/orclapex-treeview-refresh/issues",
+    "email" : "me@menn.ooo"
+  },
+  "license" : "MIT",
+  "author" : {
+    "name" : "Menno Hoogendijk",
+    "email" : "me@menn.ooo",
+    "url" : "http://menn.ooo/",
+    "twitter" : "mennooo",
+    "donationUrl" : "https://www.paypal.me/mennooo"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mennooo/orclapex-treeview-refresh.git"
+  },
+  "oracle" : {
+    "versions" : ["11.2.0.1", "12.1.0.1"],
+    "apex" : {
+      "versions" : ["5.0.0"],
+      "plugin" : {
+        "internalName" : "MHO.REFRESH_TREE",
+        "type" : "dynamic action",
+        "demo" : "https://apex.oracle.com/pls/apex/f?p=115922:2",
+        "previewImage" : "https://raw.githubusercontent.com/Dani3lSun/apex-plugin-guidedtour/master/preview.png"
+      }
+    }
+  }
+}
