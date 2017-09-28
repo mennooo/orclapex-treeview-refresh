@@ -53,7 +53,7 @@ wwv_flow_api.create_plugin(
 '  apex_javascript.add_library (',
 '    p_name                    => ''apexTreeView#MIN#''',
 '  , p_directory               => p_plugin.file_prefix',
-'  , p_check_to_add_minified   => true',
+'  , p_check_to_add_minified   => false',
 '  );    ',
 '  ',
 '  l_js :=',
