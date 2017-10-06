@@ -23,8 +23,9 @@ window.mho = window.mho || {}
       loadingIndicatorPosition: 'centered'
     })
 
-    var expandedNodes,
-      selectedNodes
+    var selectedNodes,
+      expandedNodesIds
+
     // After AJAX, refresh tree
     promise.done(function (data) {
       // What to do when tree is empty after refresh
@@ -46,23 +47,34 @@ window.mho = window.mho || {}
       var nodeAdapter = tree$.treeView('getNodeAdapter')
 
       nodeAdapter.data = data.data
-      expandedNodes = tree$.find('.is-collapsible').toArray()
-      selectedNodes = tree$.treeView('getSelection').toArray()
-
-      expandedNodes = expandedNodes.map(function (node) {
-        return '#' + $(node).attr('id')
-      })
-      selectedNodes = selectedNodes.map(function (node) {
-        return '#' + $(node).parent().attr('id')
-      })
+      selectedNodes = tree$.treeView('getSelectedNodes')
+      expandedNodesIds = tree$.treeView('getNodeAdapter').getExpandedNodeIds(tree$.treeView('mhoGetBaseId'))
 
       tree$.treeView('refresh')
 
-      expandedNodes.forEach(function (node) {
-        tree$.treeView('expand', $(node))
+      expandedNodesIds.forEach(function (id) {
+        var node$ = tree$.treeView('find', {
+          depth: -1,
+          findAll: false,
+          match: function (node) {
+            return node.id === id
+          }
+        })
+        tree$.treeView('expand', node$)
       })
 
-      tree$.treeView('setSelection', $(selectedNodes.join(',')), true)
+      selectedNodes.map(function (node) {
+        return tree$.treeView('find', {
+          depth: -1,
+          findAll: false,
+          match: function (node) {
+            return node.id === node.id
+          }
+        })
+      })
+      if (selectedNodes.length > 0) {
+        tree$.treeView('setSelectedNodes', selectedNodes, true)
+      }
 
       tree$.trigger('apexafterrefresh')
       apex.da.resume(options.da.resumeCallback, false)
