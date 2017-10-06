@@ -307,7 +307,7 @@ wwv_flow_api.create_plugin(
 ,p_help_text=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'How to use?',
 'Specify the tree region in the affected element(s).'))
-,p_version_identifier=>'1.0'
+,p_version_identifier=>'1.1'
 ,p_about_url=>'https://github.com/mennooo/orclapex-treeview-refresh'
 ,p_files_version=>38
 );
