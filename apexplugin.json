@@ -1,6 +1,6 @@
 {
   "name" : "Tree - Refresh",
-  "version" : "1.1",
+  "version" : "1.2",
   "description" : "Refresh the APEX 5.0 Tree asynchronous",
   "keywords" : ["tree", "refresh"],
   "homepage" : "https://github.com/mennooo/orclapex-treeview-refresh",
