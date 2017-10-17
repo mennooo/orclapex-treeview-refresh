@@ -28,7 +28,7 @@ end;
 prompt --application/shared_components/plugins/dynamic_action/mho_refresh_tree
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(27276911308767386240)
+ p_id=>wwv_flow_api.id(55878003465437061604)
 ,p_plugin_type=>'DYNAMIC ACTION'
 ,p_name=>'MHO.REFRESH_TREE'
 ,p_display_name=>'Tree - Refresh'
@@ -177,6 +177,7 @@ wwv_flow_api.create_plugin(
 '    ',
 '    apex_json.write(''id'', l_tree_tab(idx).node_value);',
 '    apex_json.write(''label'', l_tree_tab(idx).node_title);',
+'    apex_json.write(''icon'', l_tree_tab(idx).node_icon);',
 '    apex_json.write(''link'', l_tree_tab(idx).node_link);',
 '    apex_json.write(''tooltip'', l_tree_tab(idx).node_tooltip);',
 '    ',
@@ -312,8 +313,8 @@ wwv_flow_api.create_plugin(
 ,p_files_version=>38
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(27276911484025386243)
-,p_plugin_id=>wwv_flow_api.id(27276911308767386240)
+ p_id=>wwv_flow_api.id(55878003640695061607)
+,p_plugin_id=>wwv_flow_api.id(55878003465437061604)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
@@ -361,8 +362,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(26915716552855528452)
-,p_plugin_id=>wwv_flow_api.id(27276911308767386240)
+ p_id=>wwv_flow_api.id(55516808709525203816)
+,p_plugin_id=>wwv_flow_api.id(55878003465437061604)
 ,p_file_name=>'apexTreeView.js'
 ,p_mime_type=>'text/javascript'
 ,p_file_charset=>'utf-8'
@@ -391,8 +392,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(26915716802451528452)
-,p_plugin_id=>wwv_flow_api.id(27276911308767386240)
+ p_id=>wwv_flow_api.id(55516808959121203816)
+,p_plugin_id=>wwv_flow_api.id(55878003465437061604)
 ,p_file_name=>'apexTreeView.min.js'
 ,p_mime_type=>'text/javascript'
 ,p_file_charset=>'utf-8'
