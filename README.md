@@ -1,3 +1,5 @@
+# This project is not maintained anymore by me due to the lack of time for support. I'm happy to change ownership if someone is interested.
+
 # Oracle APEX Dynamic Action Plugin - APEX TreeView Refresh
 
 This is a plugin to make the APEX 5.0 tree refreshable.
